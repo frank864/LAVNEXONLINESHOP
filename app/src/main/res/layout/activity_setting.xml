@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.SettingsActivity"
+    android:background="#E3E3E3"
+    android:id="@+id/parent"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_settings">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <Switch
+                    android:id="@+id/switchDarkMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dark Mode"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    ></Switch>
+
+                <TextView
+                    android:id="@+id/close_settings_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:layout_alignParentStart="true"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:background="#2196F3"
+                    android:text="Close"/>
+
+                <TextView
+                    android:id="@+id/update_account_settings_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="27dp"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="18sp"
+                    android:layout_marginRight="10dp"
+                    android:textStyle="bold"
+                    android:background="#2196F3"
+                    android:text="Update"/>
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/app_bar_settings"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/profile"
+        android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/profile_image_change_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_profile_image"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_marginRight="10dp"
+        android:textStyle="bold"
+        android:textColor="#403A3C"
+        android:layout_centerHorizontal="true"
+        android:background="#E6D8DD"
+        android:text="Change Profile"/>
+
+    <EditText
+        android:id="@+id/settings_phone_Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image_change_btn"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="number"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/inputs_design"
+        android:hint="Phone Number"
+        android:padding="20dp"
+        android:textColor="#292828"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_full_name"
+        android:layout_below="@+id/settings_phone_Number"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:hint="Full Name"
+        android:textColor="#292828"
+        android:textColorHint="@color/black"
+        android:layout_margin="15dp"
+        android:background="@drawable/inputs_design"/>
+
+    <EditText
+        android:id="@+id/settings_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_full_name"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/inputs_design"
+        android:hint="Address"
+        android:padding="20dp"
+        android:textColor="#292828"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/settings_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_address"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/inputs_design"
+        android:hint="Pasword"
+        android:inputType="numberPassword"
+        android:drawableRight="@drawable/ic_eye"
+
+        android:padding="20dp"
+        android:textColor="#292828"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/security_question_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settings_password"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/inputs_design"
+        android:text="Set security questions"
+        android:padding="20dp"
+        android:textColor="#292828"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+
+</RelativeLayout>

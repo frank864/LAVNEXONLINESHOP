@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Search"
+        android:id="@+id/nav_search"
+        android:iconTint="#EAE4E6"
+        android:icon="@drawable/search"
+        ></item>
+    <item
+        android:title="Cart"
+        android:id="@+id/nav_cart"
+        android:iconTint="#EAE4E6"
+        android:icon="@drawable/ic_cart"
+        ></item>
+    <item
+        android:title="Join Other Users"
+        android:id="@+id/Users_Admins_WhatApp"
+        android:iconTint="#EAE4E6"
+        android:icon="@drawable/ic_admin"
+        ></item>
+
+    <item
+        android:title="Settings"
+        android:id="@+id/nav_setting"
+        android:iconTint="#EAE4E6"
+        android:icon="@drawable/setting"
+        ></item>
+
+
+    <item
+        android:title="Logout"
+        android:id="@+id/nav_logout"
+        android:iconTint="#EAE4E6"
+        android:icon="@drawable/logout"
+        ></item>
+
+</menu>

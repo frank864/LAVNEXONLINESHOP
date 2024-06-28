@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyers.SearchProductsActivity"
+    android:background="#009688"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/r5"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#F44336"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:textAllCaps="true"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:hint="Product Name"
+            android:textColorHint="#9C27B0"
+            android:id="@+id/search_product_name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:background="@color/white"
+            android:padding="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toRightOf="@+id/search_product_name"
+            android:padding="2dp"
+            android:text="Search"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/search_list"
+        android:layout_below="@+id/r5"/>
+
+
+</RelativeLayout>

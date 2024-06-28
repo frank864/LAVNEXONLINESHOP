@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "116840139785",
+    "firebase_url": "https://gnrall-online-shop-default-rtdb.firebaseio.com",
+    "project_id": "gnrall-online-shop",
+    "storage_bucket": "gnrall-online-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116840139785:android:97e4e7f635df6e27877cd8",
+        "android_client_info": {
+          "package_name": "com.example.gnrallonlineshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDorF0_MGJyV4KDj7tlyi6HBzKSb2YkMjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116840139785:android:a419878d4067db4f877cd8",
+        "android_client_info": {
+          "package_name": "com.example.lavnexonlineshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDorF0_MGJyV4KDj7tlyi6HBzKSb2YkMjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

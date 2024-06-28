@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    app:cardElevation="15dp"
+    android:padding="2dp"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CDEAED"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <TextView
+            android:textAllCaps="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="#F44336"
+            android:id="@+id/product_name"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/product_name"
+            android:layout_marginTop="3dp"
+            android:background="#F3D2E4EC"
+            android:id="@+id/product_image"/>
+
+        <TextView
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Description"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="#E91E63"
+            android:layout_below="@+id/product_image"
+            android:id="@+id/product_description"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Price"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginTop="3dp"
+            android:textStyle="italic"
+            android:textColor="#E91E63"
+            android:layout_below="@+id/product_description"
+            android:id="@+id/product_price"/>
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
